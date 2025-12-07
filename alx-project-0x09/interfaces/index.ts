@@ -12,5 +12,8 @@ export interface GeneratedImageProps {
   action: (imagePath: string) => void
 }
 
-export type ImageProps = Pick<GeneratedImageProps, "imageUrl" | "prompt">
+export type RequestProps = {
+  prompt: string;
+}
 
+export type ImageProps = Pick<GeneratedImageProps, "imageUrl" | "prompt">
